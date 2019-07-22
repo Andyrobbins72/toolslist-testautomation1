@@ -15,12 +15,19 @@
     * User: someone who wants to create a tools list using our application
     * Supporters: this is what the customer calls 'Admin' users
 
+    Background: Logout
+      Given I am logged out
+
     Start with a tag to denote 'category' of test
     Outline - runs more than once whereas a Scenario is very specific
 
+    Some tools to think about...
+    Jam - manage all feature files in a way that BAs can understand
+    Xray - allows you manage your AC within jira and plug it into your feature files
+
     @high-impact
     Scenario Outline: a valid user logs into the application
-      Given I am logged out
+      #Given I am logged out
       When I enter username "<username>" and password "<password>"
       Then the user is informed that the login is successful
       Examples:
