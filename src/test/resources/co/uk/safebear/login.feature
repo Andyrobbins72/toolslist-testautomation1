@@ -38,7 +38,7 @@
 
       @to-do
       Scenario: an invalid user attampts to log in
-        Given I am logged out
+        #Given I am logged out
         When I enter username "attacker" and password "dontletmein"
         Then the user is informed that the login is unsuccessful
 
