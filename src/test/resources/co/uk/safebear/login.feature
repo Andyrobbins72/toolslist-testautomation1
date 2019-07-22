@@ -18,12 +18,12 @@
     Background: Logout
       Given I am logged out
 
-    Start with a tag to denote 'category' of test
-    Outline - runs more than once whereas a Scenario is very specific
+    #Start with a tag to denote 'category' of test
+    #Outline - runs more than once whereas a Scenario is very specific
 
-    Some tools to think about...
-    Jam - manage all feature files in a way that BAs can understand
-    Xray - allows you manage your AC within jira and plug it into your feature files
+    #Some tools to think about...
+    #Jam - manage all feature files in a way that BAs can understand
+    #Xray - allows you manage your AC within jira and plug it into your feature files
 
     @high-impact
     Scenario Outline: a valid user logs into the application
