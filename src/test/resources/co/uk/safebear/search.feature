@@ -4,8 +4,8 @@ Feature: Search
 
   Rules:
   * The user must be shown all tools on login
-  * The user must be shown tools that match the search criteria input
-  * The user must be informed if no tools match the search criteria input
+  * The user must be shown tools that match the search criteria entered
+  * The user must be informed if no tools match the search criteria entered
   * The user must be allowed to add a new tool
   * The user must be allowed to delete a tool
 
