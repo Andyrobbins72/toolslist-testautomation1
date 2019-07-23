@@ -42,4 +42,4 @@ Feature: Login
   Scenario: user attempts to log in with no password
     #Given i am logged out
     When i enter a username "tester" only
-    Then the user is informed
+    Then the user is informed that the password is required
