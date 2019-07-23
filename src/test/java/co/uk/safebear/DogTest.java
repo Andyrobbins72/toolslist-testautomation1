@@ -26,11 +26,8 @@ public class DogTest {
 
         //display output onto the screen for each object
         System.out.println("Rufus' neutered status is " + rufus.getIsNeutered() + " and breed is " + rufus.getBreed());
-
         System.out.println("Fido's neutered status is " + fido.getIsNeutered() + " and breed is " + fido.getBreed());
-
         System.out.println("Bouncer's neutered status is " + bouncer.getIsNeutered() + " and breed is " + bouncer.getBreed());
-
         System.out.println("Bob's neutered status is " + bob.getIsNeutered() + " and breed is " + bob.getBreed());
     }
 
