@@ -12,6 +12,7 @@ Feature: Search
   Glossary:
   * User: someone who wants to create a tools list using our application
   * Supporters: this is what the customer calls 'Admin' users
+  * Tools list: this is the list of tools available
 
   Background: Logout
     Given I am logged in

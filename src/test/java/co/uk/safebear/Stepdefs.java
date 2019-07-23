@@ -67,4 +67,28 @@ public class Stepdefs {
         // Write code here that turns the phrase above into concrete actions
         throw new cucumber.api.PendingException();
     }
+
+    @When("I add a new tool")
+    public void i_add_a_new_tool() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new cucumber.api.PendingException();
+    }
+
+    @Then("the new tool is successfully created")
+    public void the_new_tool_is_successfully_created() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new cucumber.api.PendingException();
+    }
+
+    @When("I delete a new tool")
+    public void i_delete_a_new_tool() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new cucumber.api.PendingException();
+    }
+
+    @Then("the tool is successfully deleted")
+    public void the_tool_is_successfully_deleted() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new cucumber.api.PendingException();
+    }
 }
