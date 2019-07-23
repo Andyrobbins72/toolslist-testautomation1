@@ -25,4 +25,22 @@ public class Stepdefs {
         // Write code here that turns the phrase above into concrete actions
         throw new cucumber.api.PendingException();
     }
+
+    @Then("the user is informed that the login is unsuccessful")
+    public void the_user_is_informed_that_the_login_is_unsuccessful() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new cucumber.api.PendingException();
+    }
+
+    @When("i enter a username {string} only")
+    public void i_enter_a_username_only(String string) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new cucumber.api.PendingException();
+    }
+
+    @Then("the user is informed that the password is required")
+    public void the_user_is_informed_that_the_password_is_required() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new cucumber.api.PendingException();
+    }
 }
