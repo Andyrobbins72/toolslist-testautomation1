@@ -43,4 +43,28 @@ public class Stepdefs {
         // Write code here that turns the phrase above into concrete actions
         throw new cucumber.api.PendingException();
     }
+
+    @Given("I am logged in")
+    public void i_am_logged_in() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new cucumber.api.PendingException();
+    }
+
+    @When("I search for tool {string}")
+    public void i_search_for_tool(String tools) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new cucumber.api.PendingException();
+    }
+
+    @Then("the user is shown the tools that match")
+    public void the_user_is_shown_the_tools_that_match() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new cucumber.api.PendingException();
+    }
+
+    @Then("the user is informed that no tools are found")
+    public void the_user_is_informed_that_no_tools_are_found() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new cucumber.api.PendingException();
+    }
 }
