@@ -16,14 +16,14 @@ Feature: Login
 
     #Start with a tag to denote 'category' of test
     #Outline - runs more than once whereas a Scenario is very specific
-
+    #Use what rather than how when writing scenarios
     #Some tools to think about...
     #Jam - manage all feature files in a way that BAs can understand
     #Xray - allows you manage your AC within jira and plug it into your feature files
 
   @high-impact
   Scenario Outline: a valid user logs into the application
-      #Given I am logged out
+    #Given I am logged out
     When I enter username "<username>" and password "<password>"
     Then the user is informed that the login is successful
     Examples:
@@ -34,7 +34,12 @@ Feature: Login
 
   @to-do
   Scenario: an invalid user attampts to log in
-        #Given I am logged out
+    #Given I am logged out
     When I enter username "attacker" and password "dontletmein"
     Then the user is informed that the login is unsuccessful
 
+  @to-do
+  Scenario: user attempts to log in with no password
+    #Given i am logged out
+    When i enter a username "tester" only
+    Then the user is informed
