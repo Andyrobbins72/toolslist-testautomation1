@@ -14,4 +14,20 @@ public class Dog {
         isNeutered = newIsNeutered;
     }
 
+    public void setBreed(String newBreed) {
+        breed = newBreed;
+    }
+
+    public boolean getIsNeutered() {
+        return isNeutered;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
 }
