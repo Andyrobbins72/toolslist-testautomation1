@@ -33,13 +33,13 @@ Feature: Search
     When I search for tool "notool"
     Then the user is informed that no tools are found
 
-  @to-do
+  @low-impact
   Scenario: a user adds a new tool
     #Given I am logged in
     When I add a new tool
     Then the new tool is successfully created
 
-  @to-do
+  @low-impact
   Scenario: a user deletes an existing tool
     #Given I am logged in
     When I delete a new tool
