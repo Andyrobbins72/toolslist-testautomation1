@@ -32,13 +32,13 @@ Feature: Login
       | tester1  | letmein  |
       | tester2  | letmein  |
 
-  @to-do
+  @high-impact
   Scenario: an invalid user attampts to log in
     #Given I am logged out
     When I enter username "attacker" and password "dontletmein"
     Then the user is informed that the login is unsuccessful
 
-  @to-do
+  @low-impact
   Scenario: user attempts to log in with no password
     #Given i am logged out
     When i enter a username "tester" only
