@@ -33,7 +33,7 @@ public class Stepdefs {
     }
 
     @When("i enter a username {string} only")
-    public void i_enter_a_username_only(String string) {
+    public void i_enter_a_username_only(String username) {
         // Write code here that turns the phrase above into concrete actions
         throw new cucumber.api.PendingException();
     }
@@ -51,7 +51,7 @@ public class Stepdefs {
     }
 
     @When("I search for tool {string}")
-    public void i_search_for_tool(String tools) {
+    public void i_search_for_tool(String toolname) {
         // Write code here that turns the phrase above into concrete actions
         throw new cucumber.api.PendingException();
     }
@@ -69,7 +69,7 @@ public class Stepdefs {
     }
 
     @When("I add a new tool")
-    public void i_add_a_new_tool() {
+    public void i_add_a_new_tool_called(String newtool) {
         // Write code here that turns the phrase above into concrete actions
         throw new cucumber.api.PendingException();
     }
@@ -81,13 +81,13 @@ public class Stepdefs {
     }
 
     @When("I delete a new tool")
-    public void i_delete_a_new_tool() {
+    public void i_delete_tool(String newtool) {
         // Write code here that turns the phrase above into concrete actions
         throw new cucumber.api.PendingException();
     }
 
     @Then("the tool is successfully deleted")
-    public void the_tool_is_successfully_deleted() {
+    public void the_tool_is_successfully_deleted_from_my_toolslist() {
         // Write code here that turns the phrase above into concrete actions
         throw new cucumber.api.PendingException();
     }

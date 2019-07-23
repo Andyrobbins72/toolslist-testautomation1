@@ -12,7 +12,7 @@ Feature: Search
   Glossary:
   * User: someone who wants to create a tools list using our application
   * Supporters: this is what the customer calls 'Admin' users
-  * Tools list: this is the list of tools available
+  * Toolslist: this is the list of tools available to the user
 
   Background: Logout
     Given I am logged in
@@ -20,7 +20,7 @@ Feature: Search
   @high-impact
   Scenario Outline: a user searches for an existing tool
     #Given I am logged in
-    When I search for tool "<tools>"
+    When I search for tool "<toolname>"
     Then the user is shown the tools that match
     Examples:
       | tools     |
@@ -37,11 +37,11 @@ Feature: Search
   @low-impact
   Scenario: a user adds a new tool
     #Given I am logged in
-    When I add a new tool
+    When I add a new tool called "newtool"
     Then the new tool is successfully created
 
   @low-impact
   Scenario: a user deletes an existing tool
     #Given I am logged in
-    When I delete a new tool
-    Then the tool is successfully deleted
+    When I delete tool "newtool"
+    Then the tool is successfully deleted from my toolslist
