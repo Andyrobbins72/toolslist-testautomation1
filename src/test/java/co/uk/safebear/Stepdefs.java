@@ -1,11 +1,12 @@
 package co.uk.safebear;
 
 import co.uk.safebear.utils.Driver;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.junit.After;
-import org.junit.Before;
+
 import org.openqa.selenium.WebDriver;
 
 import static org.junit.Assert.*;

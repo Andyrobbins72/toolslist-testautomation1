@@ -17,7 +17,7 @@ Feature: Search
   Background: Logout
     Given I am logged in
 
-  @high-impact
+  @to-do
   Scenario Outline: a user searches for an existing tool
     #Given I am logged in
     When I search for tool "<toolname>"
@@ -28,19 +28,19 @@ Feature: Search
       | newtool   |
       | testname  |
 
-  @high-impact
+  @to-do
   Scenario: a user searches for a tool but no tool found
     #Given I am logged in
     When I search for tool "notool"
     Then the user is informed that no tools are found
 
-  @low-impact
+  @to-do
   Scenario: a user adds a new tool
     #Given I am logged in
     When I add a new tool called "newtool"
     Then the new tool is successfully created
 
-  @low-impact
+  @to-do
   Scenario: a user deletes an existing tool
     #Given I am logged in
     When I delete tool "newtool"
