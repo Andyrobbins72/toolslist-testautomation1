@@ -38,7 +38,7 @@ Feature: Login
     When I enter username "attacker" and password "dontletmein"
     Then the user is informed that the login is unsuccessful
 
-  @low-impact
+  @to-do
   Scenario: user attempts to log in with no password
     #Given i am logged out
     When i enter a username "tester" only

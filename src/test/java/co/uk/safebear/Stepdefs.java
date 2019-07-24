@@ -29,6 +29,7 @@ public class Stepdefs {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        driver.quit();
     }
 
     @Given("I am logged out")
