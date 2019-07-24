@@ -18,7 +18,7 @@ public class Driver {
 
     public static WebDriver getDriver() {
 
-        ChromeOptions chromeOptions;
+        ChromeOptions chromeOptions = null;
         FirefoxOptions firefoxOptions;
 
         switch (BROWSER.toUpperCase()) {
@@ -44,6 +44,28 @@ public class Driver {
 
                 //return our Driver
                 return new FirefoxDriver();
+
+            case "CHROME_HEADLESS":
+
+                //tell the user which browser we're running our tests on
+                System.out.println(" Executing on CHROME_HEADLESS");
+
+                chromeOptions = new ChromeOptions();
+
+                //Set chrome to run headless
+                chromeOptions.addArguments("headless");
+
+                //make sure the window size is large and maximised
+                //so nothing disappears off screen and can't be found
+                chromeOptions.addArguments("window-size-1920,1080");
+                chromeOptions.addArguments("start-maximised");
+
+                //setup our chromedriver
+                WebDriverManager.chromedriver().setup();
+
+                //return the chromedriver with the chromeoptions set
+                return new ChromeDriver(chromeOptions);
+
 
             default:
                 throw new IllegalArgumentException("The Browser type is undefined");
