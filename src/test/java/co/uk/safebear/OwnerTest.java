@@ -7,7 +7,6 @@ public class OwnerTest {
 
     @Test
     public void OwnerTest(){
-        Owner.setName("Robbins");
 
         System.out.println("Owners name is " + Owner.getName());
 

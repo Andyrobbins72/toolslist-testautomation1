@@ -1,12 +1,35 @@
 package co.uk.safebear;
 
+import co.uk.safebear.utils.Driver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.After;
+import org.junit.Before;
+import org.openqa.selenium.WebDriver;
 
 import static org.junit.Assert.*;
 
 public class Stepdefs {
+
+    WebDriver driver;
+
+    @Before
+    public void setUp(){
+        //get the driver for the browser that you defined in driver
+        driver = Driver.getDriver();
+        //navigate to the url you defined in driver
+        driver.get(Driver.getUrl());
+    }
+
+    @After
+    public void tearDown() {
+        try {
+            Thread.sleep(Integer.parseInt(System.getProperty("sleep","2000")));
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
     @Given("I am logged out")
     public void i_am_logged_out() {

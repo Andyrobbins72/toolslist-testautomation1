@@ -2,11 +2,7 @@ package co.uk.safebear.kennels;
 
 public class Owner {
 
-    public static String name;
-
-    public static void setName(String newName) {
-        name = newName;
-    }
+    private static String name = "Bob";
 
     public static String getName() {
         return name;

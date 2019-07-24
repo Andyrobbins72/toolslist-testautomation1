@@ -18,6 +18,8 @@ public class Dog {
         breed = newBreed;
     }
 
+    //create a new method to get these variables
+
     public boolean getIsNeutered() {
         return isNeutered;
     }
