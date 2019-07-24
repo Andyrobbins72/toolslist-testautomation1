@@ -8,4 +8,6 @@ public class ToolsPageLocators {
     //messages - could have used text but this is what we are potentially testing
     private By successfulLoginmessage = By.xpath(".//body/div[@class = 'container']/p/b");
 
+    //add in by variables for search tests
+
 }
