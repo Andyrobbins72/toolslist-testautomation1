@@ -8,8 +8,17 @@ import org.openqa.selenium.WebDriver;
 
 @RequiredArgsConstructor
 public class ToolsPage {
-    ToolsPageLocators locators = new ToolsPageLocators();
 
     @NonNull
     WebDriver driver;
+
+    ToolsPageLocators locators = new ToolsPageLocators();
+
+    public String getPagetitle(){
+        return driver.getTitle();
+    }
+
+    public String checkForLoginSuccessfulMessage(){
+        return driver.findElement(locators.getSuccessfulLoginmessage()).getText();
+    }
 }
